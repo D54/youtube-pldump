@@ -78,6 +78,7 @@ def refresh_token(refresh_token):
 
 
 def auth():
+    global cred
     show_auth_page()
     code = listen_for_code()
     if 'error' in code:
